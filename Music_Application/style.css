@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.music-player {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.controls .control-button {
+    font-size: 24px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls .control-button.play {
+    background-color: #4CAF50;
+}
+
+.controls input[type="range"] {
+    width: 200px;
+    height: 5px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    background-color: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar .progress {
+    background-color: #2196F3;
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.time-display {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.song-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.song-list li:hover {
+    color: #2196F3;
+}
